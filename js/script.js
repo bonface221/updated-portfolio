@@ -36,4 +36,5 @@ $(document).ready(() => {
 			$(".header_area .main-menu").removeClass("navbar_fixed");
 		}
 	});
+
 });
