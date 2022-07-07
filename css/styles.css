@@ -10,7 +10,7 @@
 	--shadow-color: 0 10px 30px rgba(118, 85, 225, 0.3);
 	--box-shadow: 0 0.5rem 1rem rgba(57, 56, 61, 0.205);
 
-	--poppins: "Poppins", cursive;
+	--poppins: "Nunito", cursive;
 }
 * {
 	margin: 0;
@@ -19,7 +19,6 @@
 	list-style-type: none;
 	max-width: 100%;
 	font-family: var(--poppins);
-
 }
 .heading {
 	color: #000;
@@ -113,7 +112,7 @@ body {
 
 p.para {
 	color: var(--text-color);
-	font: normal 500 16px/ 25px var(--poppins);
+	font: normal 500 18px/ 25px var(--poppins);
 }
 
 .font-p--poppins {
@@ -139,6 +138,7 @@ button:active button:hover .btn:active,
 	background: #ffffff;
 	box-shadow: var(--box-shadow);
 	z-index: 999;
+	transition: 1s linear all ease;
 }
 /* global classes end */
 
@@ -215,7 +215,6 @@ span.navbar-toggler-icon {
 	margin-top: 10%;
 	padding: 2rem;
 	margin-bottom: 5%;
-	
 }
 
 .site-main .brand-area .experience-area span {
@@ -426,16 +425,35 @@ textarea {
 .list-item span {
 	color: var(--text-color);
 }
+@media (max-width:600){
 
+}
+@media screen and (max-width: 550px) {
+	.site-banner .site-title h1 {
+	font-size: 2.5rem;
+}
+}
 
-@media screen  and (max-width:410px){
-
+@media screen and (max-width: 410px) {
 	.site-main .brand-area .experience-area .bg-panel {
 		width: 100%;
 		left: 5%;
 	}
-	.site-main .brand-area .experience-area .call-area{
-		padding-left:0 ;
+	.site-main .brand-area .experience-area .call-area {
+		padding-left: 0;
+	}
+	.carousel .media{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.carousel .media img{
+		margin-bottom: .5rem;
+	}
+}
+@media (max-width:353px){
+	#homepage{
+		margin-bottom: 0;
 	}
 
 }
